@@ -42,10 +42,6 @@ $post-highlight: #ccc;
     }
 }
 
-li ul li, li ol li {
-    font-size: rem-calc(20);
-}
-
 .post-excerpt {
     margin-left: 4em;
 
@@ -78,16 +74,26 @@ li ul li, li ol li {
 
     @extend %bottom-separator;
 
-    &:first-child {
-        @extend %top-separator;
-    }
-
     figure img {
         max-width: 200px;
     }
 }
 
 .article-detail {
+
+    p, blockquote, li, figcaption {
+        font-size: $paragraph-font-size;
+    }
+
+    @media #{$small-only} {
+        p, li {
+            color: #222;
+        }
+
+        blockquote, figcaption{
+            color: lighten(#222, 30);
+        }
+    }
 
     a:visited {
         color: $body-font-color;
@@ -135,7 +141,7 @@ li ul li, li ol li {
     figcaption {
         text-align: center;
         margin-bottom: 1em;
-        color: #999;
+        color: lighten(#333, 30);
     }
 
     .signature {
@@ -156,6 +162,8 @@ li ul li, li ol li {
         margin-bottom: 1em;
 
     }
+
+
     
 }
 

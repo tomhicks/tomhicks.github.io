@@ -52,10 +52,6 @@ figcaption {
     font-style: italic;
 }
 
-blockquote {
-    font-size: rem-calc(18);
-}
-
 ul {
     margin-left: 1.1em;
 }
@@ -201,7 +197,7 @@ a:hover {
         height: $social-icon-size;
         text-align: center;
         line-height: $social-icon-size;
-        font-size: 20px;
+        font-size: 22px;
         border-radius: 20px;
         
         background: white;
@@ -220,7 +216,7 @@ a:hover {
     .contact-label {
         display: none;
 
-        @media #{$large-only} {
+        @media (min-width: 870px) {
             display: block;
         }
 

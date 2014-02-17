@@ -1138,7 +1138,7 @@ $side-nav-font-size: rem-calc(16);
 // We use these to style paragraphs
 // $paragraph-font-family: inherit;
 $paragraph-font-weight: 300;
-$paragraph-font-size: rem-calc(20);
+$paragraph-font-size: rem-calc(16);
 // $paragraph-line-height: 1.6;
 // $paragraph-margin-bottom: rem-calc(20);
 // $paragraph-aside-font-size: rem-calc(14);
@@ -1173,7 +1173,7 @@ $hr-border-color: $separator-color;
 // $definition-list-margin-bottom: rem-calc(12);
 
 // We use these to style blockquotes
-$blockquote-font-color: scale-color($body-font-color, $lightness: 30%);
+$blockquote-font-color: scale-color($body-font-color, $lightness: 20%);
 // $blockquote-padding: rem-calc(9 20 0 19);
 // $blockquote-border: 1px solid #ddd;
 // $blockquote-cite-font-size: rem-calc(13);
