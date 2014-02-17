@@ -16,6 +16,9 @@
 
 html {
     -webkit-text-size-adjust: none; /* Prevent font scaling in landscape */
+    @media #{$large-only} {
+        padding-bottom: 80px;
+    }
 }
 
 #main {
