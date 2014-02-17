@@ -1,0 +1,264 @@
+@import "settings";
+
+@import
+    "foundation/components/grid",
+    "foundation/components/side-nav",
+    "foundation/components/type";
+
+@import "post";
+@import "syntax";
+
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+html {
+    -webkit-text-size-adjust: none; /* Prevent font scaling in landscape */
+}
+
+#main {
+    margin-bottom: 1em;
+}
+
+.sidebar-item {
+    margin-bottom: 2em;
+}
+
+.side-nav .featured-article {
+    padding-left: 0.2em;
+
+    time {
+        color: $post-highlight;
+        text-transform: uppercase;
+    }
+}
+
+time {
+    font-family: $body-font-family;
+}
+
+figure {
+    margin: 0;
+}
+
+figcaption {
+    font-family: $header-font-family;
+    padding: 1em 0;
+    font-style: italic;
+}
+
+blockquote {
+    font-size: rem-calc(18);
+}
+
+ul {
+    margin-left: 1.1em;
+}
+
+a:hover {
+    color: $primary-color-dark;
+    text-decoration: underline;
+}
+
+.highlight pre {
+    padding: 1.5em;
+    background: $separator-color;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 1.5em;
+    font-size: 0.9em;
+    overflow: auto;
+}
+
+.pill {
+    background: #fafafa;
+    border-radius: 2em;
+    line-height: 2;
+    padding: 0 1em;
+
+    font-family: $body-font-family;
+
+    &:hover {
+        background: darken($separator-color, 2);
+        text-decoration: none;
+    }
+}
+
+.breakout > .row {
+    background: transparent;
+}
+
+.masthead {
+    
+    background: #0eb2b2; /* Old browsers */
+    background: -moz-linear-gradient(top,  $gradient-start 0%, $gradient-end 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$gradient-start), color-stop(100%,$gradient-end)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  $gradient-start 0%,$gradient-end 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  $gradient-start 0%,$gradient-end 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  $gradient-start 0%,$gradient-end 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  $gradient-start 0%,$gradient-end 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$gradient-start', endColorstr='$gradient-end',GradientType=0 ); /* IE6-9 */
+
+    margin-top: 8px;
+
+    h1 {
+        font-family: $body-font-family;
+
+        line-height: 2;
+
+        a {
+            color: white;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        float: left;
+
+    }
+
+    .masthead-content {
+        margin-left: 130px;
+
+        @media #{$small-only} {
+            margin-left: 70px;
+        }
+    }
+
+    .subtitle {
+        color: lighten($secondary-color, 50);
+        font-weight: normal;
+        font-size: 1.1rem;
+    }
+
+    @media #{$small-only} {
+        h1 {
+            line-height: 1.1;
+            margin: 0;
+            a {
+                display: block;
+            }
+        }
+
+        .subtitle {
+            display: block;
+            margin-bottom: 0.2em;
+        }
+    }
+
+    @media only screen and (max-width: 400px) {
+        .subtitle {
+            display: none;
+        }
+    
+        h1 {
+            line-height: 1.805;
+        }
+
+    }
+
+    .profile-picture {
+
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        border-radius: 200px;
+        top: 50%;
+        margin-top: -60px;
+        border: 8px solid white;
+
+        overflow: hidden;
+
+        @media #{$small-only} {
+            width: 100px;
+            height: 100px;
+            margin-top: -50px;
+            left: -20px;
+        }
+
+    }
+
+    $social-icon-size: 40px;
+
+    .social {
+        position: absolute;
+        display: block;
+        width: $social-icon-size;
+        height: 88px;
+        top: 50%;
+        margin-top: -44px;
+        right: 0.9375rem;
+    }
+
+    .contact-icon {
+        position: absolute;
+        width: $social-icon-size;
+        height: $social-icon-size;
+        text-align: center;
+        line-height: $social-icon-size;
+        font-size: 20px;
+        border-radius: 20px;
+        
+        background: white;
+        color: $gradient-start;
+
+        &:hover {
+            text-decoration: none;
+            color: $gradient-end;
+        }
+
+        &.contact-icon-twitter {
+            bottom: 0;
+        }
+    }
+
+    .contact-label {
+        display: none;
+
+        @media #{$large-only} {
+            display: block;
+        }
+
+        position: absolute;
+        right: 50px;
+        color: white;
+    }
+
+}
+
+.page-wrapper {
+    padding-top: 2em;
+}
+
+.side-nav-header {
+    color: $secondary-color-dark;
+}
+
+@media #{$medium-only} {
+    .sidebar-item {
+        width: 50%;
+        float: left;
+
+        &:nth-child(odd) {
+            clear: both;
+            padding-right: 0.7em;
+        }
+
+        &:nth-child(even) {
+            padding-left: 0.7em;
+        }
+    }
+}
+
+.article-detail {
+    border-bottom: 1px solid $separator-color;
+}
+
+@media #{$large-up} {
+    .article-detail {
+        border-bottom: none;
+        margin-bottom: 
+    }
+}

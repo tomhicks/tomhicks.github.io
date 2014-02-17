@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ page.title }}</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/app.css" />
+    <link href='http://fonts.googleapis.com/css?family=Lato:300|Merriweather:300,700' rel='stylesheet' type='text/css'>
+    <link href='http://weloveiconfonts.com/api/?family=entypo' rel='stylesheet' type='text/css'>
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <script src="/bower_components/jquery/jquery.js"></script>
+    <script src="/bower_components/underscore/underscore.js"></script>
+</head>
+<body>
+    
+    <!-- Nav Bar -->
+  <header class="breakout masthead">
+    <div class="row">
+      <div class="large-12 columns">
+        <a class="profile-picture" href="/">
+          <img src="/img/me.jpg" width="120" height="120" class="" alt="Tom Hicks">
+        </a>
+        <div class="masthead-content">
+          <h1>
+            <a href="/">Tom Hicks</a>
+            <span class="subtitle">Bristol-based front-end engineer</span>
+          </h1>
+          <div class="social">
+            <a class="contact-icon contact-icon-mail" href="mailto:thomas.hicks1@gmail.com">
+              <span class="contact-label">tom.hicks@me.com</span>
+              <span class="entypo-mail"></span>
+            </a>
+            <a class="contact-icon contact-icon-twitter" target="_blank" href="http://www.twitter.com/hicksyfern">
+              <span class="contact-label">hicksyfern</span>
+              <span class="entypo-twitter"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+ 
+  <!-- End Nav -->
+ 
+ 
+  <!-- Main Page Content and Sidebar -->
+ 
+  <div class="row page-wrapper">
+
+    <!-- Main Blog Content -->
+    <div class="large-9 columns" role="content">
+      <div id="main">{{content}}</div>
+    </div>
+ 
+    <!-- End Main Content -->
+ 
+ 
+    <!-- Sidebar -->
+ 
+    <aside class="large-3 columns">
+      <nav class="sidebar-item">
+        <h3 class="side-nav-header">Categories</h3>
+        <ul class="side-nav">
+          <li><a class="pill" href="/">All</a></li>
+          <li><a class="pill" href="/code">Code</a></li>
+        </ul>
+      </nav>
+      
+      {% assign has_featured = false %}
+      {% for post in site.posts %}
+        {% if post.featured %}
+          {% assign has_featured = true %}
+        {% endif %}
+      {% endfor %}
+      {% if has_featured %}
+      <nav class="sidebar-item">
+        <h3 class="side-nav-header">Featured</h3>
+        <ul class="side-nav">
+          {% include featured-posts.html %}
+        </ul>
+      </nav>
+      {% endif %}
+ 
+    </aside>
+ 
+    <!-- End Sidebar -->
+  </div>
+  
+  <!-- End Main Content and Sidebar -->
+    <script src="/js/app.js"></script>
+  </body>
+</body>
+</html>
