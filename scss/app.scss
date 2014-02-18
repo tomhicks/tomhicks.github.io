@@ -121,7 +121,7 @@ a:hover {
     }
 
     .masthead-content {
-        margin-left: 130px;
+        margin-left: 120px;
 
         @media #{$small-only} {
             margin-left: 70px;
@@ -132,7 +132,7 @@ a:hover {
 
     .subtitle {
         color: lighten($secondary-color, 50);
-        font-size: 1.1rem;
+        font-size: rem-calc(18);
     }
 
     @media #{$small-only} {
@@ -159,11 +159,16 @@ a:hover {
             line-height: 1.805;
         }
 
+        .masthead-content {
+            margin-left: 75px;
+        }
+
     }
 
     .profile-picture {
 
         position: absolute;
+        left: 0;
         width: 120px;
         height: 120px;
         border-radius: 200px;
@@ -218,6 +223,7 @@ a:hover {
 
     .contact-label {
         display: none;
+        font-size: rem-calc(18);
 
         @media (min-width: 870px) {
             display: block;
