@@ -78,6 +78,7 @@ a:hover {
     padding: 0 1em;
 
     font-family: $body-font-family;
+    font-weight: 300;
 
     &:hover {
         background: darken($separator-color, 2);
@@ -101,7 +102,7 @@ a:hover {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$gradient-start', endColorstr='$gradient-end',GradientType=0 ); /* IE6-9 */
 
     margin-top: 8px;
-
+    
     h1 {
         font-family: $body-font-family;
 
@@ -112,6 +113,7 @@ a:hover {
             &:hover {
                 text-decoration: none;
             }
+
         }
 
         float: left;
@@ -124,11 +126,12 @@ a:hover {
         @media #{$small-only} {
             margin-left: 70px;
         }
+
+        font-weight: 300;
     }
 
     .subtitle {
         color: lighten($secondary-color, 50);
-        font-weight: normal;
         font-size: 1.1rem;
     }
 

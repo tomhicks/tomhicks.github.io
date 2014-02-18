@@ -9,7 +9,7 @@ $post-highlight: #ccc;
     width: 3em;
     margin-top: -0.1em;
 
-    font-weight: lighter;
+    font-weight: 300;
 
     text-align: center;
 
@@ -83,6 +83,7 @@ $post-highlight: #ccc;
 
     p, blockquote, li, figcaption {
         font-size: $paragraph-font-size;
+        font-weight: 300;
     }
 
     @media #{$small-only} {
@@ -148,7 +149,9 @@ $post-highlight: #ccc;
     
         .author {
             color: $secondary-color;
+            font-weight: 400;
             line-height: 2;
+            font-size: rem-calc(20);
 
             &:visited {
                 color: $secondary-color;
@@ -170,6 +173,7 @@ $post-highlight: #ccc;
 .article-publish-date {
     color: $post-highlight;
     text-transform: uppercase;
+    font-weight: 300;
 }
 
 .article-header {
