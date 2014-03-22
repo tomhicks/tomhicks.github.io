@@ -100,8 +100,6 @@ a:hover {
     background: -ms-linear-gradient(top,  $gradient-start 0%,$gradient-end 100%); /* IE10+ */
     background: linear-gradient(to bottom,  $gradient-start 0%,$gradient-end 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$gradient-start', endColorstr='$gradient-end',GradientType=0 ); /* IE6-9 */
-
-    margin-top: 8px;
     
     h1 {
         font-family: $body-font-family;
