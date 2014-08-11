@@ -2,6 +2,7 @@
 title: Some of this
 layout: post
 category: code
+featured: true
 ---
 
 Bjorn Tipling wrote an interesting [article](http://bjorn.tipling.com/all-this)
