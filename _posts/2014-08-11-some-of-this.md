@@ -26,6 +26,8 @@ Whenever I have to explain ```this``` to people, I explain it as follows:
 * if there is no dot, ```this``` is the global object (or ```undefined``` in strict mode)
 * if the function has been explicitly bound (using ```call```, ```apply``` or ```bind```),
 it trumps either of the above rules
+* if the function is invoked with the ```new``` keyword, this refers to an object
+whose prototype is equal to the function's ```prototype``` property
 
 That's it.
 
