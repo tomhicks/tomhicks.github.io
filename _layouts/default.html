@@ -42,29 +42,6 @@
     <!-- Sidebar -->
 
     <aside class="large-3 columns">
-      <nav class="sidebar-item">
-        <h3 class="side-nav-header">Categories</h3>
-        <ul class="side-nav">
-          <li><a href="/">All</a></li>
-          <li><a href="/code">Code</a></li>
-          <li><a href="/technology">Technology</a></li>
-        </ul>
-      </nav>
-
-      {% assign has_featured = false %}
-      {% for post in site.posts %}
-        {% if post.featured %}
-          {% assign has_featured = true %}
-        {% endif %}
-      {% endfor %}
-      {% if has_featured %}
-      <nav class="sidebar-item">
-        <h3 class="side-nav-header">Featured</h3>
-        <ul class="side-nav">
-          {% include featured-posts.html %}
-        </ul>
-      </nav>
-      {% endif %}
 
       <nav class="sidebar-item">
         <h3 class="side-nav-header">Me</h3>
@@ -89,6 +66,30 @@
           </li>
         </ul>
       </nav>
+
+      <nav class="sidebar-item">
+        <h3 class="side-nav-header">Categories</h3>
+        <ul class="side-nav">
+          <li><a href="/">All</a></li>
+          <li><a href="/code">Code</a></li>
+          <li><a href="/technology">Technology</a></li>
+        </ul>
+      </nav>
+
+      {% assign has_featured = false %}
+      {% for post in site.posts %}
+        {% if post.featured %}
+          {% assign has_featured = true %}
+        {% endif %}
+      {% endfor %}
+      {% if has_featured %}
+      <nav class="sidebar-item">
+        <h3 class="side-nav-header">Featured</h3>
+        <ul class="side-nav">
+          {% include featured-posts.html %}
+        </ul>
+      </nav>
+      {% endif %}
 
     </aside>
 
