@@ -12,7 +12,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
 </head>
 <body>
-    
+
     <!-- Nav Bar -->
   <header class="breakout masthead">
     <div class="row">
@@ -23,24 +23,24 @@
       </div>
     </div>
   </header>
- 
+
   <!-- End Nav -->
- 
- 
+
+
   <!-- Main Page Content and Sidebar -->
- 
+
   <div class="row page-wrapper">
 
     <!-- Main Blog Content -->
     <div class="large-9 columns" role="content">
       <div id="main">{{content}}</div>
     </div>
- 
+
     <!-- End Main Content -->
- 
- 
+
+
     <!-- Sidebar -->
- 
+
     <aside class="large-3 columns">
       <nav class="sidebar-item">
         <h3 class="side-nav-header">Categories</h3>
@@ -49,7 +49,7 @@
           <li><a href="/code">Code</a></li>
         </ul>
       </nav>
-      
+
       {% assign has_featured = false %}
       {% for post in site.posts %}
         {% if post.featured %}
@@ -64,7 +64,7 @@
         </ul>
       </nav>
       {% endif %}
- 
+
       <nav class="sidebar-item">
         <h3 class="side-nav-header">Me</h3>
         <ul class="side-nav">
@@ -72,7 +72,7 @@
             <a class="social-sidebar-link" href="mailto:thomas.hicks1@gmail.com">
               <span class="contact-icon entypo-mail"></span>
               <span class="contact-label">tom.hicks@me.com</span>
-            </a>    
+            </a>
           </li>
           <li>
             <a class="social-sidebar-link" target="_blank" href="http://www.twitter.com/hicksyfern">
@@ -90,12 +90,26 @@
       </nav>
 
     </aside>
- 
+
     <!-- End Sidebar -->
   </div>
-  
+
   <!-- End Main Content and Sidebar -->
     <script src="/js/app.js"></script>
+
+    <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'tomhicks'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+    </script>
+
   </body>
 </body>
 </html>
