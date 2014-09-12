@@ -86,9 +86,13 @@ $post-highlight: $separator-color;
     }
 
     blockquote {
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
         border-left: 2px solid $accent-color;
+
+        > *:last-child, .highlight pre {
+            margin-bottom: 0;
+        }
     }
 
     @media #{$small-only} {
@@ -146,6 +150,10 @@ $post-highlight: $separator-color;
         text-align: center;
         margin-bottom: 1em;
         color: lighten(#333, 30);
+    }
+
+    .article-content {
+        margin-bottom: 2em;
     }
 
     .signature {

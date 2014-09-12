@@ -44,7 +44,7 @@ html {
 
 .social-sidebar-link {
     line-height: 32px;
-    
+
     &:hover {
         text-decoration: none;
 
@@ -86,7 +86,7 @@ a:hover {
 
 .highlight pre {
     padding: 1.5em;
-    background: #fafafa;
+    background: #fef3fa;
     border-left: none;
     border-right: none;
     margin-bottom: 1.5em;
@@ -99,7 +99,7 @@ a:hover {
 }
 
 .masthead {
-    
+
     // background: #0eb2b2; /* Old browsers */
     // background: -moz-linear-gradient(top,  $gradient-start 0%, $gradient-end 100%); /* FF3.6+ */
     // background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$gradient-start), color-stop(100%,$gradient-end)); /* Chrome,Safari4+ */
@@ -108,7 +108,7 @@ a:hover {
     // background: -ms-linear-gradient(top,  $gradient-start 0%,$gradient-end 100%); /* IE10+ */
     // background: linear-gradient(to bottom,  $gradient-start 0%,$gradient-end 100%); /* W3C */
     // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$gradient-start', endColorstr='$gradient-end',GradientType=0 ); /* IE6-9 */
-    
+
     background: $gradient-start;
 
     h1 {
@@ -160,6 +160,6 @@ a:hover {
 @media #{$large-up} {
     .article-detail {
         border-bottom: none;
-        margin-bottom: 
+        margin-bottom:
     }
 }
