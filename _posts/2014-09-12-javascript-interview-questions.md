@@ -30,9 +30,9 @@ that they so proudly put atop their CV.
 <blockquote>
     <p>I need to be able to create a car, allowing me to pass the colour of the car as a parameter.
     If I do not specify a colour, it should default to black.</p>
-    <p>The car should have a 'honk' method, which sets its 'honking' property to true immediately,
-    and sets its honking property to false after 1 second.</p>
-    <p>The car should have a 'run' method, which sets its 'running' property to true.</p>
+    <p>The car should have a <code>honk</code> method, which sets its <code>honking</code> property to true immediately,
+    and sets its <code>honking</code> property to false after 1 second.</p>
+    <p>The car should have a <code>run</code> method, which sets its <code>running</code> property to true.</p>
     <p>I will be creating many thousands of these rapidly, so I need it to be as efficient as possible
     for memory usage and speed of creation.</p>
 </blockquote>
@@ -139,8 +139,8 @@ Now we can get a bit more tricky...
 ## Dynamic objects
 
 <blockquote>
-    <p>I've created an array of 1000 ```cars```. When I call ```run``` on the first car, I want it to
-    run as normal. When I call ```run``` on any of the others <em>and any cars created in the future</em>, I
+    <p>I've created an array of 1000 <code>cars</code>. When I call <code>run</code> on the first car, I want it to
+    run as normal. When I call <code>run</code> on any of the others <em>and any cars created in the future</em>, I
     want it to run as normal, but also log <code>The {color} car is now running.</code> to the console.</p>
 </blockquote>
 
