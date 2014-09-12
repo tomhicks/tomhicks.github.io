@@ -5,7 +5,7 @@ category: code
 featured: true
 ---
 
-I read (The Best JavaScript Interview Question)[http://www.technofattie.com/2014/09/03/the-best-javascript-interview-question.html]
+I read [The Best JavaScript Interview Question](http://www.technofattie.com/2014/09/03/the-best-javascript-interview-question.html)
 the other day, and thought I'd put my own set of interview questions out there.
 
 I've compiled the following set of questions/exercises over many interviews as a way to quickly judge
