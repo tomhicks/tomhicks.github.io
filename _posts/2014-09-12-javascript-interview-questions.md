@@ -72,7 +72,9 @@ This covers:
 * idiomatic JavaScript
 
 The use of prototypes is important here. This minimizes the memory usage and maximizes the speed of
-creation. If you don't use the prototype, or understand why it helps
+creation. It's a micro-optimisation, so if it's written without prototypes, it's fine, but the candidate
+should understand why using the prototype has different performance characteristics when compared to
+object creation without prototypes.
 
 This also covers binding, because otherwise the ```setTimeout``` callback won't work correctly. Using
 a scoped variable a la ```var self = this``` is fine, too.
